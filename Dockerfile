@@ -1,7 +1,6 @@
 FROM ubuntu:16.04
 
 RUN apt-get update \
-    && apt-get install curl -y \
     && apt-get install nodejs -y \
     && apt-get install npm -y
 
