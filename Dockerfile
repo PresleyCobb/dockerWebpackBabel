@@ -18,6 +18,4 @@ RUN mkdir ./src \
 
 COPY webpack.config.js /docker
 
-COPY index.js /docker/src
-
 CMD ["bash"]
