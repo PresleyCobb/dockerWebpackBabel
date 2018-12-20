@@ -21,4 +21,6 @@ COPY webpack.config.js /docker
 
 COPY package.json /docker
 
+COPY .bablerc /docker
+
 CMD []
