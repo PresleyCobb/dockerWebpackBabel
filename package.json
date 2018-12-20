@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack cli --mode development",
-    "prod": "webpack cli --mode development"
+    "dev": "webpack-cli --mode='development'",
+    "prod": "webpack-cli --mode='production'"
   },
   "keywords": [],
   "author": "",

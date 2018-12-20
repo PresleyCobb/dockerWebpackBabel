@@ -1,8 +1,9 @@
 FROM ubuntu:16.04
 
 RUN apt-get update \
-    && apt-get install nodejs -y \
-    && apt-get install npm -y
+    && apt-get install curl -y \
+    && curl -sL https://deb.nodesource.com/setup_11.x | bash - \
+    && apt-get install -y nodejs
 
 RUN mkdir /docker
 
@@ -17,5 +18,7 @@ RUN mkdir ./src \
     && touch ./src/index.js
 
 COPY webpack.config.js /docker
+
+COPY package.json /docker
 
 CMD ["bash"]
