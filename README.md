@@ -14,7 +14,7 @@ When running the container you must bind mount your index.js file into /docker/s
 ### Example
 
 ```sh
-docker run -it --rm -v /path/to/your-es6-file.js:/docker/src/index.js -v /path/to/output/location/:/docker/dist/ webpack npm run dev
+docker run --rm -v /path/to/your-es6-file.js:/docker/src/index.js -v /path/to/output/location/:/docker/dist/ webpack npm run dev
 ```
 
 You can run the docker container in two ways:
