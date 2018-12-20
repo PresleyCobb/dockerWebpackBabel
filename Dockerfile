@@ -21,4 +21,4 @@ COPY webpack.config.js /docker
 
 COPY package.json /docker
 
-CMD ["bash"]
+CMD []
