@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  webpack:
+    image: webpack
+    container_name: webpack
+    volumes:
+    - ./index.js:/docker/src/index.js
+    - ./:/docker/dist/
+    - ./.babelrc:/tmp/.babelrc
+    - ./package.json:/docker/package.json
+    - ./webpack.config.js:/docker/webpack.config.js
+    stdin_open: true
+    tty: true
+    command: bash
