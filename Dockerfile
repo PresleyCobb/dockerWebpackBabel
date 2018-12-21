@@ -17,10 +17,4 @@ RUN apt-get install nano
 RUN mkdir ./src \
     && touch ./src/index.js
 
-COPY webpack.config.js /docker
-
-COPY package.json /docker
-
-COPY .bablerc /docker
-
 CMD []
